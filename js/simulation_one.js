@@ -1,7 +1,8 @@
 Physics(function (world) {
 
-    var viewWidth = window.innerWidth,
-        viewHeight = window.innerHeight,
+    var nav = 73,
+        viewWidth = window.innerWidth,
+        viewHeight = window.innerHeight - nav,
         viewportBounds = Physics.aabb(0, 0, viewWidth, viewHeight);
 
     var renderer = Physics.renderer('canvas', {
@@ -24,8 +25,11 @@ Physics(function (world) {
     });
 
     window.addEventListener('resize', function () {
+
+        nav = 73;
+
         viewWidth = window.innerWidth;
-        viewHeight = window.innerHeight;
+        viewHeight = window.innerHeight - nav;
 
         renderer.el.width = viewWidth;
         renderer.el.height = viewHeight;

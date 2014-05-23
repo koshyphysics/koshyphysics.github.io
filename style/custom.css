@@ -90,12 +90,6 @@ table {
 	text-decoration: underline;
 }
 
-#viewport {
-	position: fixed;
-	margin-top: -50px;
-	margin-left: -100px;
-}
-
 .pjs-meta {
 	font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif; 
 	float: right; 
