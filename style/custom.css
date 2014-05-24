@@ -111,6 +111,8 @@ table {
     color: black;
 }
 
+.simulations-list li { padding: 10px 10px; }
+
 .simulations-list a {
 	color: blue;
     text-decoration: none;
