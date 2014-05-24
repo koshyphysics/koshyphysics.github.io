@@ -1,6 +1,6 @@
 Physics(function (world) {
 
-    var nav = 73,
+    var nav = 91,
         viewWidth = window.innerWidth,
         viewHeight = window.innerHeight - nav,
         viewportBounds = Physics.aabb(0, 0, viewWidth, viewHeight);
@@ -26,7 +26,7 @@ Physics(function (world) {
 
     window.addEventListener('resize', function () {
 
-        nav = 73;
+        nav = 91;
 
         viewWidth = window.innerWidth;
         viewHeight = window.innerHeight - nav;

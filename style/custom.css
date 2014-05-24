@@ -1,5 +1,6 @@
 /* Importing web fonts */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
 /* CSS Reset */
 
@@ -93,4 +94,43 @@ table {
 .pjs-meta {
 	font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif; 
 	float: right; 
+}
+
+/* Simulations Page */
+
+#simulations {
+	font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    margin: 30px;
+}
+
+.header { padding: 20px; }
+
+.header a {
+    font-size: 30px;
+    color: black;
+}
+
+.simulations-list a {
+	color: blue;
+    text-decoration: none;
+    -moz-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.simulations-list a:hover {
+	color: orange;
+    -moz-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#title {
+	padding-left: 20px;
+	font: bold 14px 'Source Sans Pro', sans-serif;
 }
