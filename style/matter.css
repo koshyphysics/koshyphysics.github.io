@@ -18,3 +18,9 @@ section {
 	text-align: center;
 	padding: 60px;
 }
+
+.welcome h1 {
+	padding-top: 25px;
+	text-align: center;
+	color: #001F3F;
+}

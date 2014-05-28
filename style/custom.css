@@ -150,6 +150,7 @@ canvas:active {
 }
 
 /* About */
+
 .about {
 	font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif; 
 	padding-top: 50px;
@@ -157,4 +158,10 @@ canvas:active {
 	text-align: center;
     margin: 0 auto;
     line-height: 30px;
+}
+
+/* Home */
+img {
+   display: block;
+    margin: 0 auto;
 }
