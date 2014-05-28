@@ -1,3 +1,3 @@
-koshyphysics.github.io
+Koshy Physics
 ======================
-my final project for ap physics b
+This is for my final project in AP Physics B.

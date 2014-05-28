@@ -148,3 +148,12 @@ canvas:active {
 	font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif; 
 	float: right; 
 }
+
+/* About */
+.about {
+	font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	padding-top: 50px;
+	width: 50%;
+	text-align: center;
+    margin: 0 auto;
+}
