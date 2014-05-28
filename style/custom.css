@@ -91,11 +91,6 @@ table {
 	text-decoration: underline;
 }
 
-.pjs-meta {
-	font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif; 
-	float: right; 
-}
-
 /* Simulations Page */
 
 #simulations {
@@ -135,4 +130,21 @@ table {
 #title {
 	padding-left: 20px;
 	font: bold 14px 'Source Sans Pro', sans-serif;
+}
+
+/* Simulation */
+
+canvas {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+canvas:active {
+	cursor: pointer;
+	cursor: -webkit-grabbing;
+}
+
+.pjs-meta {
+	font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	float: right; 
 }
