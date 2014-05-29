@@ -20,37 +20,17 @@ var engine = Engine.create(document.body, {
         options: {
             showAngleIndicator: true,
             wireframes: false,
-            showVelocity: true
+            showVelocity: true,
+            showDebug: true
         }
     }
 });
  
 var mouseConstraint = MouseConstraint.create(engine);
 World.add(engine.world, mouseConstraint);
- 
-var rec = Bodies.rectangle(engine.render.options.width * 0.4, engine.render.options.height * 0.6, 120, 80, { friction: 0.03, force: {x: -0.1306, y: 0} });
- 
-World.add(engine.world, [
-    Bodies.rectangle(engine.render.options.width * 0.7, engine.render.options.height * 0.9, 3000, 20, { isStatic: true, angle: Math.PI / 9 }),
-    rec
-]);
- 
-console.log(rec.force);
- 
-var offset = 5;
-World.add(engine.world, [
-    Bodies.rectangle(engine.render.options.width / 2, -offset, engine.render.options.width + 2 * offset, 50, {
-        isStatic: true
-    }),
-    Bodies.rectangle(engine.render.options.width / 2, engine.render.options.height + offset, engine.render.options.width + 2 * offset, 50, {
-        isStatic: true
-    }),
-    Bodies.rectangle(engine.render.options.width + offset, engine.render.options.height / 2, 50, engine.render.options.height + 2 * offset, {
-        isStatic: true
-    }),
-    Bodies.rectangle(-offset, engine.render.options.height / 2, 50, engine.render.options.height + 2 * offset, {
-        isStatic: true
-    })
-]);
- 
+
+var cradle = Composites.newtonsCradle(280, 100, 6, 25, 200);
+World.add(engine.world, cradle);
+Body.translate(cradle.bodies[0], { x: -180, y: -100 });
+
 Engine.run(engine);

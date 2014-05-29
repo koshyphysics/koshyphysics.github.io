@@ -20,7 +20,8 @@ var engine = Engine.create(document.body, {
         options: {
             showAngleIndicator: true,
             wireframes: false,
-            showVelocity: true
+            showVelocity: true,
+            showDebug: true
         }
     }
 });
