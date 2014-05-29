@@ -29,7 +29,7 @@ var engine = Engine.create(document.body, {
 var mouseConstraint = MouseConstraint.create(engine);
 World.add(engine.world, mouseConstraint);
  
-var rec = Bodies.rectangle(engine.render.options.width * 0.4, engine.render.options.height * 0.6, 120, 80, { friction: 0.03, force: {x: -0.1306, y: 0} });
+var rec = Bodies.rectangle(engine.render.options.width * 0.4, engine.render.options.height * 0.6, 120, 80, { friction: 0.03, force: {x: -1.306/3, y: 0} });
  
 World.add(engine.world, [
     Bodies.rectangle(engine.render.options.width * 0.7, engine.render.options.height * 0.9, 3000, 20, { isStatic: true, angle: Math.PI / 9 }),
