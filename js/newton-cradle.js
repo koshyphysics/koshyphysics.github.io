@@ -35,6 +35,8 @@ World.add(engine.world, [
     rec
 ]);
  
+console.log(rec.force);
+ 
 var offset = 5;
 World.add(engine.world, [
     Bodies.rectangle(engine.render.options.width / 2, -offset, engine.render.options.width + 2 * offset, 50, {
