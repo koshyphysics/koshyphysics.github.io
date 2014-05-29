@@ -18,8 +18,18 @@ var Engine = Matter.Engine,
 var engine = Engine.create(document.body, {
     render: {
         options: {
-            showAngleIndicator: true,
             wireframes: false,
+            hasBounds: true,
+            showDebug: true,
+            showBroadphase: true,
+            showBounds: true,
+            showVelocity: true,
+            showCollisions: true,
+            showAxes: true,
+            showPositions: true,
+            showAngleIndicator: true,
+            showIds: true,
+            showShadows: true
         }
     }
 });
@@ -27,7 +37,7 @@ var engine = Engine.create(document.body, {
 var mouseConstraint = MouseConstraint.create(engine);
 World.add(engine.world, mouseConstraint);
 
-World.add(engine.world, Bodies.circle(engine.render.options.width * 0.3, engine.render.options.height * 0.8, 10));
+World.add(engine.world, Bodies.circle(engine.render.options.width * 0.3, engine.render.options.height * 0.8, 50));
 
 var offset = 5;
 World.add(engine.world, [
