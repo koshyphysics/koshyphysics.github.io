@@ -21,14 +21,28 @@ var engine = Engine.create(document.body, {
             showAngleIndicator: true,
             wireframes: false,
             showVelocity: true,
-            showDebug: true
+            showDebug: true,            
+            hasBounds: true,
+            showBroadphase: true,
+            showBounds: true,
+            showVelocity: true,
+            showCollisions: true,
+            showAxes: true,
+            showPositions: true,
+            showAngleIndicator: true,
+            showIds: true,
+            showShadows: true
+
         }
     }
 });
  
 var mouseConstraint = MouseConstraint.create(engine);
 World.add(engine.world, mouseConstraint);
- 
+
+World.add(engine.world, [Bodies.circle(engine.render.options.width * 0.4,  engine.render.options.height * 0.2, 15), 
+    Bodies.circle(engine.render.options.width * 0.4,  engine.render.options.height * 0.3, 15*3)]); 
+
 var offset = 5;
 World.add(engine.world, [
     Bodies.rectangle(engine.render.options.width / 2, -offset, engine.render.options.width + 2 * offset, 50, {
