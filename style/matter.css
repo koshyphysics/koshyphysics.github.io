@@ -25,3 +25,8 @@ section {
 	text-align: center;
 	color: #001F3F;
 }
+
+video {
+	display: block;
+	margin: 0 auto;
+}
